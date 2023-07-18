@@ -38,7 +38,8 @@ function App() {
         break;
       case "=":
         // Evaluate the expression in the result and set the result state to the evaluated value
-        setresult(eval(result));
+        const geval = eval;
+        setresult(geval(result));
         break;
       case "c":
         // Clear the result state
